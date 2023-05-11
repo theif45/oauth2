@@ -11,4 +11,5 @@ public interface UserRepository {
 	public User findUserByEmail(String email);
 	public int saveUser(User user);
 	public int saveAuthorities(Authority authoriy);
+	public int updateProvider(User user);
 }

@@ -9,6 +9,10 @@ const Login = () => {
         window.location.href = "http://localhost:8080/oauth2/authorization/google";
     };
 
+    const naverAuthLoginClickHandle = () => {
+        window.location.href = "http://localhost:8080/oauth2/authorization/naver";
+    };
+
     return (
         <div>
             <input type="text" placeholder="email" />
@@ -17,6 +21,7 @@ const Login = () => {
             <button onClick={googleAuthLoginClickHandle}>
                 <FcGoogle />
             </button>
+            <button onClick={naverAuthLoginClickHandle}>네이버</button>
         </div>
     );
 };
