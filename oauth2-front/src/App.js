@@ -7,6 +7,7 @@ import OAuth2Merge from "./pages/OAuth2Merge/OAuth2Merge";
 import Index from "./pages/Index/Index";
 import OAuth2Login from "./pages/Login/OAuth2Login";
 import AuthRoute from "./components/auth/AuthRoute";
+import PostRegister from "./pages/Posts/PostRegister";
 
 function App() {
     return (
@@ -14,6 +15,10 @@ function App() {
             <Routes>
                 <Route path="/" element={<AuthRoute path={"/"} element={<Index />} />} />
                 <Route path="/mypage" element={<AuthRoute path={"/mypage"} element={<Index />} />} />
+                <Route
+                    path="/post/register"
+                    element={<AuthRoute path={"/post/register"} element={<PostRegister />} />}
+                />
                 <Route path="/auth/login" element={<AuthRoute path={"/auth/login"} element={<Login />} />} />
                 <Route path="/auth/register" />
                 <Route

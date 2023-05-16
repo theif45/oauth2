@@ -1,4 +1,8 @@
 spring:
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/book_management
@@ -50,3 +54,6 @@ mybatis:
     
 jwt:
   secretKey: n9GeQdOVaqlkAH3kMmKcCSpp2KDvk697oUXqFRXjCiFPCoou5UgrxV9vX70vTekO
+  
+file:
+  path: C:/junil/aws_20221228_jonghyun/workspace/oauth2/oauth2-back/upload/ # 경로 끝에 슬래쉬를 넣어줌
