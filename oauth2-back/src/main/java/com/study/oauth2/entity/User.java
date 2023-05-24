@@ -8,6 +8,7 @@ import com.study.oauth2.security.PrincipalUser;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Builder
@@ -20,6 +21,7 @@ public class User {
 	private String password;
 	private String name;
 	private String provider;
+	private String profileImg;
 	
 	private List<Authority> authorities;
 	
@@ -29,6 +31,7 @@ public class User {
 				.email(email)
 				.password(password)
 				.authorities(authorities)
+				.profileImg(profileImg)
 				.build();
 	}
 	
@@ -44,6 +47,7 @@ public class User {
 				.email(email)
 				.name(name)
 				.authorities(builder.toString())
+				.profileImg(profileImg)
 				.build();
 	}
 }

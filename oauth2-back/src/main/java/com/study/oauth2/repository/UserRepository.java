@@ -12,4 +12,5 @@ public interface UserRepository {
 	public int saveUser(User user);
 	public int saveAuthorities(Authority authoriy);
 	public int updateProvider(User user);
+	public int updateProfileImg(User user);
 }
